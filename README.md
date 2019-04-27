@@ -21,7 +21,7 @@ _note: don't care about the local state for this bucket itself in this example. 
 1. `terraform plan --out tfplan`
 1. `terraform apply tfplan`
 
-we've now provisioned an S3 bucket and a silly `null_resource`. [here](link) is the current remote state.
+we've now provisioned an S3 bucket and a silly `null_resource`. [here](https://gist.github.com/mdavis40/f49bc7a15bb68ad6a2f2ca6dca199840#file-initial-apply-tf-state) is the current remote state.
 
 ### that all worked, what's the problem?
 we need to switch branches to discover the issue. we'll also _simulate_ a CI job, and cleanup `.terraform/`.
